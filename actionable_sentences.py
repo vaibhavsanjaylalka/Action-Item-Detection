@@ -74,7 +74,7 @@ def get_chunks(tagged_sent):
 ''' Starting the main function '''
 
 print("Start processing the cleaned content")
-emails_df = pd.read_csv('./enron-email-dataset/content23.csv', names='m')
+emails_df = pd.read_csv('./enron-email-dataset/content1.csv', names='m')
 
 for index in range(len(emails_df)): 
     sentence_list = nltk.sent_tokenize(emails_df['m'][index])
