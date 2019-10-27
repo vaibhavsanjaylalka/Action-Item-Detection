@@ -28,7 +28,7 @@ def is_actionable(tagged_sent):
         # catches simple imperatives, e.g. "Open the pod bay doors, HAL!"
         if tagged_sent[0][1] == "VB" or tagged_sent[0][1] == "MD":
             return True
-        # catches imperative sentences starting with words like 'please', 'you',...
+        # catches actionable sentences starting with words like 'please', 'you',...
         # E.g. "Dave, stop.", "Just take a stress pill and think things over."
         else:
             chunk = get_chunks(tagged_sent)
@@ -36,7 +36,7 @@ def is_actionable(tagged_sent):
             if type(chunk[0]) is Tree and chunk[0].label() == "VB-Phrase":
                 return True
 
-    # Questions can be imperatives too, let's check if this one is
+    # Questions can be actionable too, let's check if this one is
     else:
         # check if sentence contains the word 'please'
         print("It is a question")
