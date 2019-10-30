@@ -42,13 +42,13 @@ When you run: actionable_sentences.py-
    This module trains the labeled dataset from the sentence*.csv file and randomly picks the 4000 (actionable) and 5000 (non-actionable) sentences and after training 
    predicts the test.csv dataset
    Results:
-   ----------
- Accuracy on the given test dataset:
+   Accuracy on the given test dataset:
 RandomForestClassifier accuracy = 63.9167309175%
 ('sensitivity: ', 0.599388379204893)
 ('specificity: ', 0.6796267496111975)
 MultinomialNB accuracy = 63.2228218967%
 ('sensitivity: ', 0.6926605504587156)
 ('specificity: ', 0.5707620528771384)
+
 ============================================  
   
