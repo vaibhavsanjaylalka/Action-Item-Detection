@@ -35,6 +35,15 @@ When you run: actionable_sentences.py-
   Sample Train Dataset having two column - sentence and label (actionable or non-actionable)
   
 =============================
+
+When you run: rule-based-model-testdata.py
+Input: test.csv (Given the test file)
+Apply our rule based model to the given test.csv 
+Accuracy of the rule bases model: 66.769%
+('sensitivity: ', 0.5642201834862385)
+('specificity: ', 0.7729393468118196)
+
+==============================
   
   When you run: ml-classification-model.py
    Input: sentence1.csv and sentence2.csv , test.csv
@@ -51,4 +60,9 @@ MultinomialNB accuracy = 63.2228218967%
 ('specificity: ', 0.5707620528771384)
 
 ============================================  
-  
+
+Note: test.csv file is not present in the repository. Put it in enron-email-dataset Folder
+test.csv: Hand-crafted labeled dataset - format: <sentence>|<True|Flase>
+Ex: Please drop me a mail regarding meeting|True
+
+
